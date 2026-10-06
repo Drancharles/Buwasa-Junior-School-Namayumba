@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://buwasa-junior-school-namayumba.vercel.app/sitemap.xml
