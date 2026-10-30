@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000">
+<meta name="description" content="Buwasa Junior School - FEEL. THINK. ACT. Founded 2022, Namayumba Town Council, Wakiso District. Register your child online.">
+<meta property="og:title" content="Buwasa Junior School | FEEL. THINK. ACT.">
+<meta property="og:description" content="A private aided community-based pre-primary and primary school in Namayumba, Wakiso. Register your child online.">
+<meta property="og:image" content="https://i.postimg.cc/g0Jh9WyN/IMG-20261007-WA7765.jpg">
+<title>Buwasa Junior School | Founded 2022 | FEEL. THINK. ACT</title>
+<link rel="icon" href="https://i.postimg.cc/g0Jh9WyN/IMG-20261007-WA7765.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#000;          /* page background */
+  --bg-alt:#000;      /* alternate sections */
+  --surface:#000;     /* cards */
+  --surface-2:#0A0A0A;   /* inputs */
+  --border:#2A2A2A;
+  --text:#F3F1EC;
+  --muted:#A8A49A;
+  --gold:#22C55E;        /* headings / highlights */
+  --accent:#22C55E;      /* teal - buttons / lines */
+  --accent-2:#16A34A;
+  --danger:#F87171;
+  --ok:#22C55E;
+}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins','Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif}
+a{color:var(--gold)}
+
+header{background:#000;text-align:center;padding:24px 15px;border-bottom:1px solid var(--border)}
+header img{height:84px;width:84px;object-fit:cover;background:#fff;border-radius:50%;padding:4px;border:3px solid var(--gold);display:block;margin:0 auto 8px;box-shadow:0 0 24px rgba(34,197,94,.3)}
+header h1{color:#fff;font-size:24px;letter-spacing:2px}
+header p{color:var(--muted);font-size:13px;letter-spacing:1px}
+
+nav{background:rgba(0,0,0,.96);backdrop-filter:blur(8px);display:flex;justify-content:space-around;overflow-x:auto;white-space:nowrap;padding:8px 5px;position:sticky;top:0;z-index:99;border-bottom:1px solid var(--border);scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{color:var(--text);text-decoration:none;font-weight:500;padding:8px 12px;border-radius:20px;font-size:13px;flex-shrink:0}
+nav a:hover{color:var(--gold)}
+nav a.reg{background:var(--accent);color:#000;font-weight:600}
+
+.hero{background:#000;text-align:center;padding:48px 15px;border-bottom:1px solid var(--border)}
+.hero h2{font-size:30px;color:var(--gold);line-height:1.3}
+.hero .loc{color:var(--accent);margin-top:6px;font-size:13px}
+.hero p.lead{max-width:850px;margin:10px auto 16px;font-size:14px;color:var(--text)}
+
+.btn{background:var(--accent);color:#000;padding:11px 24px;border-radius:30px;text-decoration:none;font-weight:600;display:inline-block;margin:6px;font-size:14px;border:0;cursor:pointer;font-family:inherit;transition:transform .15s,background .15s}
+.btn:hover{background:#22C55E;transform:translateY(-1px)}
+.btn.gold{background:var(--gold)}
+.btn.gold:hover{background:#4ADE80}
+
+.section{padding:28px 14px;max-width:1150px;margin:auto}
+.section.alt{background:var(--bg-alt);border-radius:14px;border:1px solid var(--border)}
+.title{text-align:center;margin-bottom:16px}
+.title h2{color:#fff;font-size:23px;display:inline-block}
+
+.card{background:var(--surface);padding:18px;border-radius:12px;border:1px solid var(--border);margin-bottom:14px}
+.card b{color:var(--gold)}
+.card p{font-size:14px}
+.card p+p{margin-top:8px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.grid .card{margin-bottom:0}
+.card h3{color:var(--gold);font-size:18px;margin-bottom:6px}
+.card ul{list-style:none;font-size:13px;color:var(--muted)}
+.card ul li::before{content:"› ";color:var(--accent)}
+
+.advert{text-align:center;padding:10px 0}
+.advert h2{color:var(--gold);font-size:22px}
+.advert ul{list-style:none;margin:8px 0 10px}
+.advert li{font-size:13px;margin:3px 0;font-weight:500}
+
+
+.motto{text-align:center}
+.motto h2{color:var(--gold);font-size:26px;letter-spacing:2px}
+.motto p{color:var(--muted);margin-top:6px}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px}
+.gallery img{width:100%;height:180px;object-fit:cover;border-radius:10px;border:1px solid var(--border);background:var(--surface)}
+
+/* Registration form */
+form{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px}
+form h3{color:var(--gold);font-size:17px;margin:14px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--border)}
+form h3:first-of-type{margin-top:0}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+label{display:block;font-size:12px;color:var(--muted);margin:8px 0 3px;font-weight:500}
+label span{color:var(--danger)}
+input,select,textarea{width:100%;background:var(--surface-2);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:10px 12px;font:inherit;font-size:14px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);border-color:var(--accent)}
+input[type=date]{color-scheme:dark}
+textarea{resize:vertical;min-height:80px}
+.hp{position:absolute;left:-9999px;opacity:0}
+#formMsg{margin-top:12px;padding:10px 12px;border-radius:8px;font-size:14px;display:none}
+#formMsg.ok{display:block;background:rgba(34,197,94,.12);color:var(--ok);border:1px solid var(--ok)}
+#formMsg.err{display:block;background:rgba(248,113,113,.12);color:var(--danger);border:1px solid var(--danger)}
+.note{font-size:12px;color:var(--muted);margin-top:8px}
+
+.contact{background:var(--surface);border:1px solid var(--border);text-align:center;padding:28px 15px;border-radius:14px}
+.contact h2{color:var(--gold);margin-bottom:8px;font-size:22px}
+.contact a{text-decoration:none}
+.icons{display:flex;justify-content:center;gap:14px;margin-top:10px}
+.icons a{width:46px;height:46px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center}
+.icons a.wa{background:#22C55E}
+.icons svg{width:24px;height:24px;fill:#000}
+footer{background:#000;color:var(--muted);text-align:center;padding:18px 12px;font-size:12px;border-top:1px solid var(--border);margin-top:24px}
+</style>
+</head>
+<body>
+
+<header>
+<img src="https://i.postimg.cc/g0Jh9WyN/IMG-20261007-WA7765.jpg" alt="Buwasa Junior School Logo">
+<h1>BUWASA JUNIOR SCHOOL</h1>
+<p>Founded in 2022 | FEEL. THINK. ACT.</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#classes">Classes</a>
+<a href="#aims">Aims</a>
+<a href="#activities">Activities</a>
+<a href="#gallery">Our Pupils</a>
+<a href="#register" class="reg">Register</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="hero">
+<h2>Welcome to Buwasa Junior School</h2>
+<p class="loc">Buwasa Village, Namayumba Town Council, Wakiso District – 1km along Kyampisi Road</p>
+<p class="lead">Buwasa Junior School is a private aided, community-based pre-primary and primary school.</p>
+<a href="#register" class="btn">REGISTER YOUR CHILD</a>
+<a href="#contact" class="btn gold">CONTACT US</a>
+</section>
+
+<section class="section">
+<div class="advert">
+<h2>ADMISSION IN PROGRESS – 2026</h2>
+<p style="font-size:14px;font-weight:600">Pre-Primary &amp; Primary | Limited Spaces Available</p>
+<ul>
+<li>✔ Qualified and Caring Teachers</li>
+<li>✔ Conducive Learning Environment</li>
+<li>✔ Sports, Music, Dance &amp; Drama</li>
+<li>✔ Affordable School Fees</li>
+</ul>
+<a href="#register" class="btn">REGISTER ONLINE</a>
+</div>
+</section>
+
+<section id="about" class="section">
+<div class="title"><h2>About Us</h2></div>
+<div class="grid">
+<div class="card"><h3>Introduction</h3><p>A private aided, community-based pre-primary and primary school nurturing responsible and morally upright learners.</p></div>
+<div class="card"><h3>Location</h3><p>Buwasa Village, Namayumba Town Council, Wakiso District – 1km along Kyampisi Road.</p></div>
+<div class="card"><h3>Founded</h3><p>Established in 2022.</p></div>
+</div>
+</section>
+
+<section id="classes" class="section alt">
+<div class="title"><h2>Classes We Offer</h2></div>
+<div class="grid">
+<div class="card"><h3>Pre-Primary</h3><ul><li>Baby Class</li><li>Middle Class</li><li>Top Class</li></ul></div>
+<div class="card"><h3>Lower Primary</h3><ul><li>Primary 1</li><li>Primary 2</li><li>Primary 3</li></ul></div>
+<div class="card"><h3>Upper Primary</h3><ul><li>Primary 4</li><li>Primary 5</li><li>Primary 6</li><li>Primary 7</li></ul></div>
+</div>
+</section>
+
+<section id="motto" class="section">
+<div class="card motto">
+<h2>FEEL. THINK. ACT</h2>
+<p>Our motto – being responsible and morally right in order to be a model school in the community.</p>
+</div>
+</section>
+
+<section id="aims" class="section">
+<div class="title"><h2>Aims, Values &amp; Objectives</h2></div>
+<div class="grid">
+<div class="card"><h3>Aim</h3><p>Changing the mindset of the people in the community through providing proper education.</p></div>
+<div class="card"><h3>Core Values</h3><p>Being responsible and morally right in order to be a model school in the community.</p></div>
+<div class="card"><h3>Objectives</h3>
+<p>1. Building one of the best schools in Namayumba Town Council.</p>
+<p>2. Improving literacy levels in the community.</p>
+<p>3. Providing adequate education and promoting talents through sports, music, dance and drama.</p></div>
+</div>
+</section>
+
+<section id="activities" class="section alt">
+<div class="title"><h2>Support Activities</h2></div>
+<div class="grid">
+<div class="card"><h3>Sports</h3><p>Football, Netball, Volleyball, Athletics and other ball games to build teamwork, discipline and fitness.</p></div>
+<div class="card"><h3>Music, Dance &amp; Drama</h3><p>Promoting talents and cultural expression.</p></div>
+<div class="card"><h3>Clubs</h3><p>Debate Club, Scripture Union, Environmental Club.</p></div>
+</div>
+</section>
+
+<section id="gallery" class="section">
+<div class="title"><h2>Our Pupils – 2026 Update</h2></div>
+<div class="gallery">
+<img loading="lazy" src="https://i.postimg.cc/nzk4RsN0/IMG-20261019-WA5425.jpg" alt="New pupils 2026">
+<img loading="lazy" src="https://i.postimg.cc/CLfZdBJv/IMG-20261019-WA1451.jpg" alt="New pupils 2026">
+<img loading="lazy" src="https://i.postimg.cc/Cx7fVycR/IMG-20261019-WA7534.jpg" alt="New pupils 2026">
+<img loading="lazy" src="https://i.postimg.cc/FK115YfJ/IMG-20261019-WA0130.jpg" alt="New pupils 2026">
+<img loading="lazy" src="https://i.postimg.cc/VsSFrjCN/IMG-20261007-WA2010.jpg" alt="Buwasa Junior School pupils">
+<img loading="lazy" src="https://i.postimg.cc/NGHBNzXg/IMG-20261007-WA5688.jpg" alt="Buwasa Junior School pupils">
+<img loading="lazy" src="https://i.postimg.cc/tJHfv20R/IMG-20261007-WA0413.jpg" alt="Buwasa Junior School pupils">
+<img loading="lazy" src="https://i.postimg.cc/nrkdRxGV/IMG-20261007-WA3794.jpg" alt="Buwasa Junior School pupils">
+<img loading="lazy" src="https://i.postimg.cc/0jcfGfPt/IMG-20261007-WA2451.jpg" alt="Buwasa Junior School pupils">
+<img loading="lazy" src="https://i.postimg.cc/PxHzBcxP/IMG-20261007-WA2766.jpg" alt="Buwasa Junior School pupils">
+</div>
+</section>
+
+<section id="register" class="section">
+<div class="title"><h2>Register Your Child Online</h2></div>
+<form id="regForm" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="5b759aaa-abd1-423f-918e-050c909c9394">
+<input type="hidden" name="subject" value="New Pupil Registration – Buwasa Junior School">
+<input type="hidden" name="from_name" value="Buwasa Junior School Website">
+<input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+<h3>Child's Details</h3>
+<div class="row">
+<div><label for="child">Child's full name <span>*</span></label><input id="child" name="Child Name" required></div>
+<div><label for="dob">Date of birth <span>*</span></label><input id="dob" type="date" name="Date of Birth" required></div>
+<div><label for="gender">Gender <span>*</span></label>
+<select id="gender" name="Gender" required><option value="">Select…</option><option>Girl</option><option>Boy</option></select></div>
+<div><label for="cls">Class applying for <span>*</span></label>
+<select id="cls" name="Class Applying For" required>
+<option value="">Select…</option>
+<optgroup label="Pre-Primary"><option>Baby Class</option><option>Middle Class</option><option>Top Class</option></optgroup>
+<optgroup label="Lower Primary"><option>Primary 1</option><option>Primary 2</option><option>Primary 3</option></optgroup>
+<optgroup label="Upper Primary"><option>Primary 4</option><option>Primary 5</option><option>Primary 6</option><option>Primary 7</option></optgroup>
+</select></div>
+<div><label for="prev">Previous school (if any)</label><input id="prev" name="Previous School"></div>
+<div><label for="health">Health / special needs (if any)</label><input id="health" name="Health Notes"></div>
+</div>
+
+<h3>Parent / Guardian Details</h3>
+<div class="row">
+<div><label for="parent">Full name <span>*</span></label><input id="parent" name="Parent Name" required></div>
+<div><label for="rel">Relationship to child</label><input id="rel" name="Relationship" placeholder="e.g. Mother, Father, Guardian"></div>
+<div><label for="phone">Phone number <span>*</span></label><input id="phone" type="tel" name="Phone" required placeholder="07XXXXXXXX"></div>
+<div><label for="email">Email (optional)</label><input id="email" type="email" name="email"></div>
+<div><label for="addr">Home address / village</label><input id="addr" name="Address"></div>
+</div>
+
+<label for="msg">Additional message</label>
+<textarea id="msg" name="Message"></textarea>
+
+<div style="text-align:center;margin-top:14px">
+<button type="submit" class="btn" id="submitBtn">SUBMIT REGISTRATION</button>
+</div>
+<div id="formMsg" role="status"></div>
+<p class="note">After submitting, the school will contact you to confirm admission and fees.</p>
+</form>
+</section>
+
+<section id="contact" class="section">
+<div class="contact">
+<h2>Contact Us</h2>
+<p style="font-size:13px">Buwasa Junior School</p>
+<p style="font-size:12px;color:var(--muted)">Buwasa Village, Namayumba Town Council, Wakiso District – 1km along Kyampisi Road</p>
+<p style="margin-top:8px">Director: <a href="tel:0705462737">0705462737</a> / <a href="tel:0750380927">0750380927</a></p>
+<p>Head Teacher: <a href="tel:0704164637">0704164637</a></p>
+<p style="font-size:13px">Email: <a href="mailto:buwasajuniorschool@gmail.com">buwasajuniorschool@gmail.com</a></p>
+<div class="icons">
+<a href="tel:0705462737" aria-label="Call the director" title="Call"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a>
+<a href="https://wa.me/256750380927" aria-label="Chat on WhatsApp" title="WhatsApp" class="wa"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .78.8-2.93-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.25-.12-1.45-.72-1.68-.8-.22-.08-.38-.12-.55.12s-.63.8-.77.96c-.14.17-.28.18-.53.06a6.7 6.7 0 0 1-3.3-2.9c-.25-.43.25-.4.72-1.34.08-.17.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.8-.2-.47-.4-.4-.55-.41h-.47c-.17 0-.43.06-.65.3s-.86.84-.86 2.05.88 2.38 1 2.55c.12.17 1.73 2.65 4.2 3.72 1.57.68 2.18.74 2.97.62.48-.07 1.45-.6 1.66-1.17.2-.57.2-1.06.14-1.17-.06-.1-.22-.17-.47-.3z"/></svg></a>
+</div>
+</div>
+</section>
+
+<footer>© 2026 Buwasa Junior School | FEEL. THINK. ACT.</footer>
+
+<script>
+const form=document.getElementById('regForm'),msg=document.getElementById('formMsg'),btn=document.getElementById('submitBtn');
+form.addEventListener('submit',async e=>{
+  e.preventDefault();
+  btn.disabled=true;btn.textContent='SENDING…';msg.className='';msg.style.display='none';
+  try{
+    const r=await fetch(form.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)});
+    const j=await r.json();
+    if(j.success){msg.className='ok';msg.textContent='Thank you! Your registration was received. We will contact you soon.';form.reset();}
+    else throw new Error(j.message||'Failed');
+  }catch(err){
+    msg.className='err';msg.textContent='Sorry, something went wrong. Please try again or call 0705462737.';
+  }
+  btn.disabled=false;btn.textContent='SUBMIT REGISTRATION';
+});
+</script>
+</body>
+</html>
